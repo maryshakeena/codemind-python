@@ -1,10 +1,9 @@
-a=int(input())
-while(a):
-    b=int(input())
-    s=list(map(int,input().split()))
-    b=sorted(s)
-    if(s==b):
-        print(0)
+x=int(input())
+for i in range (x):
+    n=int(input())
+    l=list(map(int,input().split()))
+    k=sorted(l)
+    if l==k:
+        print("0")
     else:
-        print(max(b)-min(b))
-    a-=1
+        print(k[-1]-k[0])
